@@ -46,8 +46,6 @@ def convert_title_list(titles):
 class MovielensDataset(RecBaseDataset):
     def __init__(self, text_processor=None, ann_paths=None):
         super().__init__(text_processor, ann_paths)
-        # self.vis_root = vis_root
-        # self.annotation = pd.read_csv(ann_paths[0],sep='\t', index_col=None,header=0)[['uid','iid','title','sessionItems', 'sessionItemTitles']]
         self.annotation = pd.read_pickle(ann_paths[0] + ".pkl").reset_index(drop=True)
         self.use_his = False
         if 'sessionItems' in self.annotation.columns:
