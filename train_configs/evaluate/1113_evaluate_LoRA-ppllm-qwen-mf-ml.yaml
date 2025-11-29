@@ -30,7 +30,7 @@ model:
     pretrained_path: collm-trained-models/my-collm-trained-models/mf_0912_ml1m_oodv2_best_model_d256lr-0.001wd0.0001.pth
 #  ckpt: wait
 #  ckpt: minigpt4/Qwen/Qwen2.5-1.5rec_log/collm/20251114085_ppllm/checkpoint_best.pth # stage1 model/ tallrec
-  ckpt: minigpt4/Qwen/Qwen2.5-1.5rec_log/collm/20251112212_best_tallrec/checkpoint_best.pth
+  ckpt: minigpt4/Qwen/Qwen2.5-1.5rec_log/collm/collm_merged_eval_model.pth
   # ckpt: /data/fengfl/collm/20241021220/checkpoint_best.pth
 
   
