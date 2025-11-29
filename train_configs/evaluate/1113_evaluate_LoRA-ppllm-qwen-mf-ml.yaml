@@ -32,11 +32,11 @@ model:
 #  ckpt: minigpt4/Qwen/Qwen2.5-1.5rec_log/collm/20251114085_ppllm/checkpoint_best.pth # stage1 model/ tallrec
   ckpt: minigpt4/Qwen/Qwen2.5-1.5rec_log/collm/collm_merged_eval_model.pth
   # ckpt: /data/fengfl/collm/20241021220/checkpoint_best.pth
-
+# 运行命令：python train_collm_mf_din.py --cfg-path=train_configs/evaluate/1113_evaluate_LoRA-ppllm-qwen-mf-ml.yaml > log/1113_evaluate_LoRA-ppllm-qwen-mf-ml.txt 2>&1
   
 
 datasets:
-  amazon_ood:
+  movie_ood:
     path: 'D:\Pycoding\CoLLM-main\CoLLM-main\collm-datasets\ml-1m\ml-1m\'
     data_type: default
     build_info:
@@ -75,7 +75,7 @@ run:
   evaluate: True
   train_splits: ["train"]
   valid_splits: ["valid"]
-  test_splits: ["test", "valid"]
+  test_splits: ["test", "valid","test_warm", "test_cold"]
 
   device: "cuda"
   world_size: 1

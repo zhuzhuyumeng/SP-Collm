@@ -31,7 +31,7 @@ model:
 #  ckpt: wait
   ckpt: minigpt4/Qwen/Qwen2.5-1.5rec_log/collm/20251112212_best_tallrec/checkpoint_best.pth # stage1 model/ tallrec
   # ckpt: /data/fengfl/collm/20241021220/checkpoint_best.pth
-
+# 运行命令：python train_collm_mf_din.py --cfg-path=train_configs/2CIE/1027_LoRA-collm-qwen-mf-ml.yaml > log/1027_LoRA-collm-qwen-mf-ml.txt 2>&1
   
 
 datasets:
